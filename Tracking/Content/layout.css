@@ -1,0 +1,57 @@
+﻿.header-get-a-quote .btn-primary {
+    background: #4dcc2c;
+}
+
+.header-one ul.navbar-nav > li.active > a {
+    color: #4dda2a;
+}
+
+.header-one ul.navbar-nav > li:hover > a {
+    color: #4dda2a;
+}
+
+.call-to-action-box .action-style-box {
+    background: #4cd629;
+}
+
+h4.panel-title a:before {
+    background: #4cd629;
+}
+
+h4.panel-title a {
+    color: #4cd629;
+    display: block;
+}
+
+.footer .widget-title {
+    color: #fff;
+    border-left: 3px solid #4dcc2c;
+}
+
+#main-slide .carousel-indicators li.active, #main-slide .carousel-indicators li:hover {
+    background: #23282d;
+}
+
+#back-to-top .btn.btn-primary {
+    color: #ffffff;
+}
+
+
+.navbar-toggle {
+    background: #4cd629;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-menu {
+        text-align: center;
+    }
+}
+
+
+.requestQuote {
+    background-color: #4dcc2c;
+    margin-top: 78px;
+}
+.white{
+    background-color:white;
+}

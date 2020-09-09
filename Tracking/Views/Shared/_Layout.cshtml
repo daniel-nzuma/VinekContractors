@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>@ViewBag.Title - Moose Technologies</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @section scripts {
+
+        <script src="../Scripts/html5shiv.js"></script>
+        <script src="../Scripts/respond.min.js"></script>
+    }
+
+
+
+
+</head>
+<body>
+    <!-- Header start -->
+    <header id="header" class="header-one">
+        <div class="container">
+            <div class="row">
+                <div class="logo-area clearfix">
+                    <div class="logo col-xs-12 col-md-3">
+                        <a href="Home/Index">
+                            <img src="~/images/logo.png" width="200">
+                        </a>
+                    </div><!-- logo end -->
+
+                    <div class="col-xs-12 col-md-9 header-right">
+                        <ul class="top-info-box">
+                            <li>
+                                <div class="info-box">
+                                    <div class="info-box-content">
+                                        <p class="info-box-title">Call Us</p>
+                                        <p class="info-box-subtitle">+254731825866</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-box">
+                                    <div class="info-box-content">
+                                        <p class="info-box-title">Email Us</p>
+                                        <p class="info-box-subtitle"> support@moosetechnologiez.com</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="last">
+                                <div class="info-box last">
+                                    <div class="info-box-content">
+                                        <p class="info-box-title">Post office</p>
+                                        <p class="info-box-subtitle">50548-00200 Nairobi</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header-get-a-quote">
+                                <span class="btn btn-primary">@Html.ActionLink("Get A Quote", "AboutUs", "Home")</span>
+                            </li>
+                        </ul><!-- Ul end -->
+                    </div><!-- header right end -->
+                </div><!-- logo area end -->
+
+            </div><!-- Row end -->
+        </div>
+        <!-- Container end -->
+
+        <nav class="site-navigation navigation navdown">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="site-nav-inner pull-left">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                           
+                            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("HOME", "Index", "Home")</li>
+                                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "AboutUs" ? "active" : "")">@Html.ActionLink("ABOUT US", "AboutUs", "Home")</li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            SOLUTIONS <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="services.html">Services All</a></li>
+                                            <li><a href="service-single.html">Services Single</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")">@Html.ActionLink("CONTACT", "Contact", "Home")</li>
+                                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Login" ? "active" : "")">@Html.ActionLink("LOGIN", "Login", "Home")</li>
+
+                                </ul>
+                                <!--/ Nav ul end -->
+                            </div>
+                            <!--/ Collapse end -->
+
+                        </div><!-- Site Navbar inner end -->
+
+                    </div>
+                    <!--/ Col end -->
+                </div>
+
+            </div>
+            <!--/ Container end -->
+
+        </nav>
+        <!--/ Navigation end -->
+    </header>
+    <div class="body-inner">
+        @RenderBody()
+        <hr class="white"/>
+        <footer id="footer" class="footer bg-overlay">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 footer-widget footer-about">
+                            <h3 class="widget-title">About Us</h3>
+                            <p>
+                                We are a technology company that focuses on the use of technology to solve your security and automation
+                                needs.
+                            </p>
+                            <div class="footer-social">
+                                <ul> 
+                                    <li><a href="https://facebook.com/Moose tech"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/Moose tech"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://whatsapp.com"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div><!-- Footer social end -->
+                        </div><!-- Col end -->
+
+                        <div class="col-md-4 col-sm-12 footer-widget">
+                            <h3 class="widget-title">Working Hours</h3>
+                            <div class="working-hours">
+                                We work 5 days a week, every day excluding major holidays. Contact us if you have an emergency, with our
+                                Hotline and Contact form.
+                                <br><br> Monday - Friday: <span class="text-right">08:00 - 17:00 </span>
+                                <br> Saturday: <span class="text-right">08:00 - 13:00</span>
+                                <br> Sunday and holidays: <span class="text-right">Closed</span>
+                            </div>
+                        </div><!-- Col end -->
+
+                        <div class="col-md-4 col-sm-12 footer-widget">
+                            <h3 class="widget-title">Services</h3>
+                            <ul class="list-arrow">
+                                <li>@Html.ActionLink("Vehicle tracking", "Index", "Home")</li>
+                                <li>@Html.ActionLink("CCTV Systems", "Index", "Home")</li>
+                                <li>@Html.ActionLink("Gate automation", "Index", "Home")</li>
+                                <li>@Html.ActionLink("Intercomm Systems", "Index", "Home")</li>
+                            </ul>
+                        </div><!-- Col end -->
+
+
+                    </div><!-- Row end -->
+                </div><!-- Container end -->
+            </div><!-- Footer main end -->
+
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="copyright-info">
+                                <span>Copyright @@ @DateTime.Now.Year Moose Technologiez</span>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="footer-menu">
+                                <ul class="nav unstyled">
+                                    @Html.ActionLink("About us", "AboutUs", "Home")
+                                    @Html.ActionLink("Contact", "Contact", "Home")
+                                    @Html.ActionLink("Privacy policy", "PrivacyPolicy", "Home")
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- Row end -->
+
+                    <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+                        <button class="btn btn-primary hvr-icon-up" title="Back to Top">
+                            <i class="fa fa-angle-double-up hvr-icon"></i>
+                        </button>
+                    </div>
+
+                </div><!-- Container end -->
+            </div><!-- Copyright end -->
+
+        </footer><!-- Footer end -->
+    </div>
+
+    @Scripts.Render("~/bundles/scripts")
+    
+    @RenderSection("scripts", required: false)
+</body>
+</html>
