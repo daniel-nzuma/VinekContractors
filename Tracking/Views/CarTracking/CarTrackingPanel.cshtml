@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "CarTrackingPanel";
+    Layout = "~/Views/Shared/_CarTrackingPanelLayout.cshtml";
+}
+<link href="@Url.Content("~/Content/page_styles/CarTrackingPanel.css")" rel="stylesheet" type="text/css" />
+
+
+<div class="container-fluid" id="map">
+</div>
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    </div>
+</div>
+
+
+
+@Scripts.Render("https://maps.googleapis.com/maps/api/js?key=")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js")
+@Scripts.Render("~/Scripts/page_scripts/googleMapCustom.js")
+
+
+

@@ -46,11 +46,7 @@ namespace Tracking.Controllers
             return View();
         }
 
-        [Authorize]
-        public ActionResult CarTrackingPanel(string returnUrl)
-        {
-            return View();
-        }
+       
 
         [Authorize(Roles = "admin")]
         public ActionResult AdminPanel()

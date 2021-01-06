@@ -39,7 +39,7 @@
                         console.log(serverResponse);
                         if (serverResponse.login_role == "user")
                         {
-                            window.location.replace("/Home/CarTrackingPanel");
+                            window.location.replace("/CarTracking/CarTrackingPanel");
                         }
                         else if (serverResponse.login_role == "admin")
                         {
