@@ -3,3 +3,24 @@
     height: 100%;
     margin-top: -23px;
 }
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: right;
+}
+
+.accordion .card-header.collapsed:after {
+    content: "\f067";
+    color: #3a3b45;
+}
+
+.card .card-header[data-toggle=collapse]::after {
+    color: #3a3b45;
+}
+
+.dropdown-toggle {
+    all: unset;
+}
+
+ 

@@ -40,13 +40,14 @@ namespace Tracking
                       ));
 
             bundles.Add(new ScriptBundle("~/bundles/dashboardScripts").Include(
-                     "~/Scripts/jquery.min.js",
                      "~/Scripts/bootstrap.bundle.min.js",
                       "~/Scripts/jquery.easing.min.js",
                      "~/Scripts/sb-admin-2.min.js",
                      "~/Scripts/Chart.min.js",
                      "~/Scripts/chart-area-demo.js",
-                     "~/Scripts/chart-pie-demo.js"));
+                     "~/Scripts/chart-pie-demo.js",
+                     "~/Scripts/page_scripts/CarTrackingPanelLayout.js"
+                     ));
 
         }
     }

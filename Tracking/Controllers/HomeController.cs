@@ -15,7 +15,6 @@ namespace Tracking.Controllers
 {
     public class HomeController : Controller
     {
-        /*private mooseEntities dbInstance = new mooseEntities();*/
 
         public HomeController()
         {
