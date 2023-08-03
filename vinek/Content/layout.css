@@ -1,0 +1,57 @@
+﻿.header-get-a-quote .btn-primary {
+    background: #2a66ae;
+}
+
+.header-one ul.navbar-nav > li.active > a {
+    color: #2a66ae;
+}
+
+.header-one ul.navbar-nav > li:hover > a {
+    color: #2a66ae;
+}
+
+.call-to-action-box .action-style-box {
+    background: #2a66ae;
+}
+
+h4.panel-title a:before {
+    background: #2a66ae;
+}
+
+h4.panel-title a {
+    color: #2a66ae;
+    display: block;
+}
+
+.footer .widget-title {
+    color: #fff;
+    border-left: 3px solid #2a66ae;
+}
+
+#main-slide .carousel-indicators li.active, #main-slide .carousel-indicators li:hover {
+    background: #2a66ae;
+}
+
+#back-to-top .btn.btn-primary {
+    color: #ffffff;
+}
+
+
+.navbar-toggle {
+    background: #2a66ae;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-menu {
+        text-align: center;
+    }
+}
+
+
+.requestQuote {
+    background-color: #2a66ae;
+    margin-top: 78px;
+}
+.white{
+    background-color:white;
+}

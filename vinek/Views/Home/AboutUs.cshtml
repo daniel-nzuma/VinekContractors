@@ -1,0 +1,135 @@
+﻿@{
+    ViewBag.Title = "About us";
+}
+
+<link href="@Url.Content("~/Content/page_styles/AboutUs.css")" rel="stylesheet" type="text/css" />
+
+
+<section id="main-container" class="main-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="column-title">Who We Are</h3>
+                <p>
+                    Established in 2012 in Nairobi, Kenya VinekContractors has over 5 years’ experience in delivering high quality services to enable clients to meet the growth challenges of quality and safety.
+                    We as a company can reduce risk and improve compliance. Our accreditations offer customers peace of mind.Our continued business is built on reputation and
+                    reliability, whilst meeting and exceeding our client’s expectations.
+                </p>
+                <p>
+                    With our employees having knowledge of regulations, great technical ability and experience of working in a wide range of industries, we can minimize
+                    your costs and fulfill your requirements.
+                    Our success has enabled us to expand to various regions in Kenya
+
+                </p>
+            </div><!-- Col end -->
+
+            <div class="col-md-6">
+
+                <div id="page-slider" class="owl-carousel owl-theme page-slider small-bg">
+
+                    <div class="item" style="background-image:url(images/banner/cctv.jpg)">
+                        <div class="container">
+                            <div class="box-slider-content">
+                                <div class="box-slider-text">
+                                    <h2 class="box-slide-title">Excellence</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Item 1 end -->
+
+                    <div class="item" style="background-image:url(images/banner/cctv.jpg)">
+                        <div class="container">
+                            <div class="box-slider-content">
+                                <div class="box-slider-text">
+                                    <h2 class="box-slide-title">Commitment</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Item 1 end -->
+
+                    <div class="item" style="background-image:url(images/banner/cctv.jpg)">
+                        <div class="container">
+                            <div class="box-slider-content">
+                                <div class="box-slider-text">
+                                    <h2 class="box-slide-title">Partnerships</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Item 1 end -->
+                    <div class="item" style="background-image:url(images/banner/cctv.jpg)">
+                        <div class="container">
+                            <div class="box-slider-content">
+                                <div class="box-slider-text">
+                                    <h2 class="box-slide-title">Profesionalism</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Item 1 end -->
+                </div><!-- Page slider end-->
+
+
+            </div><!-- Col end -->
+        </div><!-- Content row end -->
+
+    </div><!-- Container end -->
+</section><!-- Main container end -->
+
+<section id="facts" class="facts-area dark-bg">
+    <div class="container">
+        <div class="row">
+            <div class="facts-wrapper">
+                <div class="col-sm-3 ts-facts">
+                    <div class="ts-facts-content">
+                        <h2 class="ts-facts-num"><span class="counterUp">39</span></h2>
+                        <h3 class="ts-facts-title">Total Projects</h3>
+                    </div>
+                </div><!-- Col end -->
+
+                <div class="col-sm-3 ts-facts">
+                    <div class="ts-facts-content">
+                        <h2 class="ts-facts-num"><span class="counterUp">17</span></h2>
+                        <h3 class="ts-facts-title">Staff Members</h3>
+                    </div>
+                </div><!-- Col end -->
+
+                <div class="col-sm-3 ts-facts">
+                    <div class="ts-facts-content">
+                        <h2 class="ts-facts-num"><span class="counterUp">4000</span></h2>
+                        <h3 class="ts-facts-title">Hours of Work</h3>
+                    </div>
+                </div><!-- Col end -->
+
+                <div class="col-sm-3 ts-facts">
+                    <div class="ts-facts-content">
+                        <h2 class="ts-facts-num"><span class="counterUp">10</span></h2>
+                        <h3 class="ts-facts-title">Regions covered</h3>
+                    </div>
+                </div><!-- Col end -->
+
+            </div> <!-- Facts end -->
+        </div><!--/ Content row end -->
+    </div><!--/ Container end -->
+</section><!-- Facts end -->
+
+<section class="vision whitesmoke">
+    <div class="container">
+        <div class="row text-center">
+            <p class="section-sub-title">
+                "To supply arid and semi arid areas with water using clean solar power,
+                efficient and cost effective water pumping mechanism."
+<p>
+        </div><!--/ Title row end -->
+    </div><!--/ Container end -->
+</section><!--/ section end -->
+
+
+<section class="content requestQuote">
+    <div class="container">
+        <div class="row text-center">
+            <span class="btn btn-primary txt-large">@Html.ActionLink("Get A Quote", "AboutUs", "Home")</span>
+        </div><!-- Row end -->
+    </div>
+</section>
+
+
+

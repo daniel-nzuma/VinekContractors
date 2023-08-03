@@ -1,0 +1,49 @@
+﻿
+.btn-primary {
+    background: #2a66ae;
+}
+
+.banner_slide_cctv {
+    background-image: url("/images/banner/cctv.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner_slide_tracking {
+    background-image: url("/images/banner/tracking.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.banner_slide_intercomm {
+    background-image: url("/images/banner/intercomm.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide-sub-title {
+    color: #2a66ae;
+}
+
+
+    .clients-logo img {
+        width: 200px;
+        height:127px;
+    }
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 50px;
+    font-style: normal;
+    margin-left: 20px;
+    color: #2a66ae;
+}
+
+.txt-large{
+    font-size:24px;
+}
