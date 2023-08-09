@@ -147,7 +147,7 @@ a {
 a:hover {
     text-decoration: none;
     opacity:0.8;
-    color:white !important;
+    color:black !important;
 }
 
 a.read-more {
@@ -3559,3 +3559,9 @@ label {
 .header-two .logo{
     padding: 28px 0;
 }
+
+
+.our_clients {
+    background: #F5F5F5;
+}
+

@@ -29,11 +29,14 @@
     color: #2a66ae;
 }
 
+.whychooseus {
+    background: #faebd7;
+}
 
-    .clients-logo img {
-        width: 200px;
-        height:127px;
-    }
+.clients-logo img {
+    width: 200px;
+    height: 127px;
+}
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
