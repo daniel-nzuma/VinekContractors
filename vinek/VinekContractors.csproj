@@ -186,7 +186,6 @@
     </Compile>
     <Compile Include="Helpers\Cryptography.cs" />
     <Compile Include="login.cs" />
-    <Compile Include="Model\LoginViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -1974,15 +1973,10 @@
     <Content Include="Scripts\jquery.easing.min.js" />
     <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\jquery.min.js" />
-    <Content Include="Scripts\page_scripts\adminpanel.js" />
-    <Content Include="Scripts\page_scripts\CarTrackingPanelLayout.js" />
-    <Content Include="Scripts\page_scripts\Commands.js" />
-    <Content Include="Scripts\page_scripts\googleMapCustom.js" />
-    <Content Include="Scripts\page_scripts\login.js" />
+    <Content Include="Scripts\page_scripts\Contact.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\moment.min.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
-    <Content Include="Scripts\page_scripts\Reports.js" />
     <Content Include="Scripts\perfect-scrollbar.min.js" />
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -2007,6 +2001,16 @@
     <Content Include="images\logo.png" />
     <Content Include="images\clients\waterlift.png" />
     <Content Include="images\clients\davis_shirtliff.png" />
+    <Content Include="images\icon-image\pump.png" />
+    <Content Include="images\icon-image\borehole.png" />
+    <Content Include="images\icon-image\bpumps.png" />
+    <Content Include="images\icon-image\solar-energy.png" />
+    <Content Include="images\icon-image\teamwork.png" />
+    <Content Include="images\icon-image\united.png" />
+    <Content Include="images\icon-image\excellence.png" />
+    <Content Include="images\icon-image\quality.png" />
+    <Content Include="images\icon-image\professionals.png" />
+    <Content Include="images\icon-image\suitcase.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -2072,8 +2076,6 @@
     <Content Include="Content\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Views\Shared\_Login.cshtml" />
-    <Content Include="Views\Home\AdminPanel.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
   </ItemGroup>
   <ItemGroup>

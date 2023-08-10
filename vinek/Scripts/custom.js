@@ -206,55 +206,6 @@ jQuery(function ($) {
 
 	});
 
-
-
-	/* ----------------------------------------------------------- */
-	/*  Contact form
-	/* ----------------------------------------------------------- */
-
-	$('#contact-form').submit(function () {
-
-		var $form = $(this),
-			$error = $form.find('.error-container'),
-			action = $form.attr('action');
-
-		$error.slideUp(750, function () {
-			$error.hide();
-
-			var $name = $form.find('.form-control-name'),
-				$email = $form.find('.form-control-email'),
-				$subject = $form.find('.form-control-subject'),
-				$message = $form.find('.form-control-message');
-
-			$.post(action, {
-					name: $name.val(),
-					email: $email.val(),
-					subject: $subject.val(),
-					message: $message.val()
-				},
-				function (data) {
-					$error.html(data);
-					$error.slideDown('slow');
-
-					if (data.match('success') != null) {
-						$name.val('');
-						$email.val('');
-						$subject.val('');
-						$message.val('');
-					}
-				}
-			);
-
-		});
-
-		return false;
-
-	});
-
-
-
-
-
 	/* ----------------------------------------------------------- */
 	/*  Back to top
 	/* ----------------------------------------------------------- */

@@ -2978,6 +2978,7 @@ img.testimonial-thumb {
 .map {
     height: 450px;
     z-index: 1;
+    width:100%;
 }
 
 .contact-info-box {

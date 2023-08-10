@@ -10,6 +10,8 @@ using System.Security.Claims;
 using System.Web;
 using System.Web.Mvc;
 using Tracking.Helpers;
+using System.Net;
+using System.Net.Mail;
 
 namespace Tracking.Controllers
 {
@@ -45,58 +47,38 @@ namespace Tracking.Controllers
             return View();
         }
 
-       
-
-        [Authorize(Roles = "admin")]
-        public ActionResult AdminPanel()
-        {
-
-            return View();
-
-        }
 
         [HttpPost]
-        public JObject ValidateLogin(string email, string password)
+        public JObject SendEmail(string fromAddress, string subject,string message)
         {
             JObject responseObject = new JObject();
 
-            string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DbConnectionString"].ConnectionString;
-            SqlConnection sqlConnection = new SqlConnection(ConnectionString);
-            sqlConnection.Open();
-            SqlCommand cmd = new SqlCommand("verifylogin", sqlConnection);
-            cmd.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = email;
-            cmd.CommandType = CommandType.StoredProcedure;
-            SqlDataReader dataReader = cmd.ExecuteReader();
+            MailAddress to = new MailAddress("nzuma.daniel@eclectics.io");
+            MailAddress from = new MailAddress(fromAddress);
 
-            if (dataReader.HasRows)
+            MailMessage email = new MailMessage(from, to);
+            email.Subject = subject;
+            email.Body = message + $"from {from}";
+
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host = "smtp.gmail.com";
+            smtp.Port = 587;
+            smtp.Credentials = new NetworkCredential("nzuma.daniel@eclectics.io", "Fdunlastborn9");
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            smtp.EnableSsl = true;
+            
+
+            try
             {
-                while (dataReader.Read())
-                {
-                    var dbPaswordHash = dataReader[1].ToString();
-
-                    if (Cryptography.verifyPassword(dbPaswordHash, password))
-                    {
-                        SignInUser(email, dataReader[0].ToString(), false);
-                        responseObject.Add("success", true);
-                        responseObject.Add("login_role", dataReader[0].ToString());
-
-                    }
-                    else
-                    {
-                        responseObject.Add("success", false);
-                        responseObject.Add("message", "Password is invalid!");
-                    }
-
-                }
+                /* Send method called below is what will send off our email 
+                 * unless an exception is thrown.
+                 */
+                smtp.Send(email);
             }
-            else 
+            catch (SmtpException ex)
             {
-                responseObject.Add("success", false);
-                responseObject.Add("message", "Email not found try again!");
+                Console.WriteLine(ex.ToString());
             }
-
-            dataReader.Close();
-            sqlConnection.Close();
 
             return responseObject;
 

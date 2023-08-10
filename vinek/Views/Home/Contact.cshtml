@@ -32,37 +32,43 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="ts-service-box-bg text-center">
-                    <span class="ts-service-icon icon-round">
-                        <i class="fa fa-phone-square"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                        <h4>Call Us</h4>
-                        <p> +254720550993</p>
-                    </div>
+                    <a href="tel:+254720550993">
+                        <span class="ts-service-icon icon-round">
+                            <i class="fa fa-phone-square"></i>
+                        </span>
+                        <div class="ts-service-box-content">
+                            <h4>Call Us</h4>
+                            <p> +254720550993</p>
+                        </div>
+                    </a>
                 </div>
             </div><!-- Col 1 end -->
 
             <div class="col-md-4">
                 <div class="ts-service-box-bg text-center">
-                    <span class="ts-service-icon icon-round">
-                        <i class="fa fa-envelope"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                        <h4>Email Us</h4>
-                        <p>support@vinekcontractors.com</p>
-                    </div>
+                    <a href="mailto:support@vinekcontractors.com" target="_blank">
+                        <span class="ts-service-icon icon-round">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        <div class="ts-service-box-content">
+                            <h4>Email Us</h4>
+                            <p>support@vinekcontractors.com</p>
+                        </div>
+                    </a>
                 </div>
             </div><!-- Col 2 end -->
 
             <div class="col-md-4">
                 <div class="ts-service-box-bg text-center">
-                    <span class="ts-service-icon icon-round">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                        <h4>WhatsApp Us</h4>
-                        <p> +254720550993</p>
-                    </div>
+                    <a href="https://wa.me/+254720550993" target="_blank">
+                        <span class="ts-service-icon icon-round">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </span>
+                        <div class="ts-service-box-content">
+                            <h4>WhatsApp Us</h4>
+                            <p> +254720550993</p>
+                        </div>
+                    </a>
                 </div>
             </div><!-- Col 3 end -->
 
@@ -70,8 +76,8 @@
 
         <div class="gap-60"></div>
 
-        <div id="map" class="map"></div>
 
+        <iframe id="map" class="map" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="http://maps.google.com/maps?q=0.01667,37.07283&z=16&output=embed" " style="filter: scale(100) contrast(1.2) opacity(0.4);"></iframe>
         <div class="gap-40"></div>
 
         <div class="row">
@@ -80,7 +86,7 @@
 
                 <h3 class="column-title">FOR Quote request,complains or suggestions</h3>
 
-                <form id="contact-form" action="contact-form.php" method="post" role="form">
+                <form class="contact_us_form" role="form">
                     <div class="error-container"></div>
                     <div class="row">
                         <div class="col-md-4">
@@ -108,6 +114,10 @@
                         <label>Message</label>
                         <textarea class="form-control form-control-message" name="message" id="message" placeholder="" rows="10" required></textarea>
                     </div>
+                    <div class="text-left">
+                        <br>
+                        <div class="statusTxt"></div>
+                    </div>
                     <div class="text-right">
                         <br>
                         <button class="btn btn-primary solid blank" type="submit">Send Message</button>
@@ -120,6 +130,6 @@
 </section><!-- Main container end -->
 
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="~/Scripts/page_scripts/Contact.js"></script>
 
-<!-- Google Map API Key-->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
